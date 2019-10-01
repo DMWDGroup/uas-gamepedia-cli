@@ -30,16 +30,14 @@ module.exports.getMatches = query => {
 
       return resolve(
         [...data].map(x => {
-          let versus = `${x.title.WinTeam} ${chalk.red("vs")} ${x.title.LossTeam}`.padEnd(longest, " ");
+          let versus = `${x.title.WinTeam} ${chalk.red("vs")} ${x.title.LossTeam}`;
+          let versusPadded = versus.padEnd(longest, " ");
+          let info = `${chalk.red(" | ")}${x.title["DateTime UTC"]}${chalk.red(" | ")}${x.title.Patch}`;
 
           return {
             value: x.title.MatchHistory,
-            name:
-              versus +
-              `${chalk.red(" | ")} ${x.title["DateTime UTC"]} ${chalk.red(" | ")} ${
-                // name: `${x.title.WinTeam} ${chalk.red("vs")} ${x.title.LossTeam} ${chalk.red(" | ")} ${x.title["DateTime UTC"]} ${chalk.red(" | ")} ${
-                x.title.Patch
-              }`
+            short: versus + info,
+            name: versusPadded + info
           };
         })
       );

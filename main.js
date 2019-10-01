@@ -63,7 +63,7 @@ const main = async () => {
   await makeCoffe(345);
   spinner1.stop();
 
-  console.table(utils.generateURLs(match.Match));
+  console.log(utils.generateURLs(match.Match));
 
   ora().succeed(chalk.green.bold("That's all folks!"));
   process.exit();
