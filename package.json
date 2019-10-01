@@ -1,0 +1,29 @@
+{
+  "name": "uas_uf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marucik/UAS_LG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marucik/UAS_LG/issues"
+  },
+  "homepage": "https://github.com/Marucik/UAS_LG#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "cli-spinners": "^2.2.0",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.2",
+    "qs": "^6.9.0"
+  }
+}
