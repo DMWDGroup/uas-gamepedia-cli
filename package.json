@@ -1,23 +1,27 @@
 {
-  "name": "uas_uf",
+  "name": "@dmwdgroup/uas_uf",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "bin": "./main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marucik/UAS_LG.git"
+    "url": "git+https://github.com/DMWDGroup/uas_uf.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "DMWDGroup",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marucik/UAS_LG/issues"
+    "url": "https://github.com/DMWDGroup/uas_uf/issues"
   },
-  "homepage": "https://github.com/Marucik/UAS_LG#readme",
+  "homepage": "https://github.com/DMWDGroup/uas_uf#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "chalk": "^2.4.2",
