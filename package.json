@@ -1,9 +1,11 @@
 {
   "name": "@dmwdgroup/uas_uf",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "main.js",
-  "bin": "./main.js",
+  "bin": {
+    "uas_uf": "main.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"

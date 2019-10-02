@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const inquirer = require("inquirer");
 const queryMaker = require("./queryMaker");
 const getters = require("./getters");
