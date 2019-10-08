@@ -1,10 +1,10 @@
 {
-  "name": "@dmwdgroup/uas_uf",
+  "name": "@dmwdgroup/uas-gamepedia-cli",
   "version": "1.0.5",
   "description": "",
   "main": "main.js",
   "bin": {
-    "uas_uf": "main.js"
+    "uas-gamepedia-cli": "main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DMWDGroup/uas_uf.git"
+    "url": "git+https://github.com/DMWDGroup/uas-gamepedia-cli.git"
   },
   "keywords": [],
   "author": "DMWDGroup",
@@ -21,9 +21,9 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DMWDGroup/uas_uf/issues"
+    "url": "https://github.com/DMWDGroup/uas-gamepedia-cli/issues"
   },
-  "homepage": "https://github.com/DMWDGroup/uas_uf#readme",
+  "homepage": "https://github.com/DMWDGroup/uas-gamepedia-cli#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "chalk": "^2.4.2",
