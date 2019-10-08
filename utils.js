@@ -4,22 +4,22 @@ clear = str => {
   return " " + str + " ";
 };
 
-module.exports.generateURLs = url => {
+module.exports.generateURLs = matchHistoryURL => {
   const serviceURL = "https://acs.leagueoflegends.com/v1/stats/game/";
-  let mh = url;
+  let matchHistory = matchHistoryURL;
 
-  let id = url.split("#match-details/")[1];
-  id = id.slice(0, id.indexOf("&"));
+  let matchId = matchHistoryURL.split("#match-details/")[1];
+  matchId = matchId.slice(0, matchId.indexOf("&"));
 
-  let ss = serviceURL + id;
+  let stats = serviceURL + matchId;
 
-  let splitId = id.split("?");
-  let tl = serviceURL + splitId[0] + "/timeline?" + splitId[1];
+  let splitId = matchId.split("?");
+  let timeline = serviceURL + splitId[0] + "/timeline?" + splitId[1];
 
   return {
-    MatchHistory: clear(mh),
-    StatsJSON: clear(ss),
-    TimelineJSON: clear(tl)
+    MatchHistory: clear(matchHistory),
+    StatsJSON: clear(stats),
+    TimelineJSON: clear(timeline)
   };
 };
 
