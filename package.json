@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/DMWDGroup/uas-gamepedia-cli#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "chalk": "^2.4.2",
     "cli-spinners": "^2.2.0",
     "inquirer": "^7.0.0",
